@@ -47,4 +47,13 @@ let pokemonList=[
     document.write(output + "<br>");
   });
 
+  return {
+    add: function(pokemon) {
+      pokemonList.push(pokemon);
+    },
+    getAll: function() {
+      return pokemonList;
+    }
+  };
+
 })();
