@@ -1,4 +1,4 @@
-(function() {
+let pokemonRepository = (function() {
 
 //pokemon array
 let pokemonList=[
