@@ -32,17 +32,16 @@ let pokemonList=[
         }
   ];
   
-  for (let i = 0; i < pokemonList.length; i++) {
-    let pokemon = pokemonList[i];
+  pokemonList.forEach (function(pokemon) {
     let name = pokemon.name;
     let height = pokemon.height;
     let output = name + " (height: " + height + ")";
-
+                       
     // Check if the height is above a certain value
     if (height > 5) {
       output += " - Wow, that's big!";
     }
   
     document.write(output + "<br>");
-  }
+  });
   
