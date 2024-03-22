@@ -1,3 +1,5 @@
+(function() {
+
 //pokemon array
 let pokemonList=[
     {
@@ -44,4 +46,5 @@ let pokemonList=[
   
     document.write(output + "<br>");
   });
-  
+
+})();
