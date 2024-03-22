@@ -34,7 +34,7 @@ let pokemonList=[
         }
   ];
   
-  pokemonList.forEach (function(pokemon) {
+  pokemonRepository.getAll().forEach (function(pokemon) {
     let name = pokemon.name;
     let height = pokemon.height;
     let output = name + " (height: " + height + ")";
