@@ -48,5 +48,6 @@ let pokemonList=[
     //create a variable inside the forEach's loop function block, then assign it the ul element you just added to your “index.html” file.
     let pokemonListElement = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
-
+    let button = document.createElement('button');
+    button.innerText = pokemon.name;
   });
