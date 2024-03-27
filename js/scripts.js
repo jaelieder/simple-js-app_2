@@ -34,6 +34,16 @@ let pokemonList=[
         }
   ];
   
+  return {
+    add: function(pokemon) {
+      pokemonList.push(pokemon);
+    },
+    getAll: function() {
+      return pokemonList;
+    }
+  };
+})();
+
   pokemonRepository.getAll().forEach (function(pokemon) {
     let name = pokemon.name;
     let height = pokemon.height;
@@ -46,14 +56,3 @@ let pokemonList=[
   
     document.write(output + "<br>");
   });
-
-  return {
-    add: function(pokemon) {
-      pokemonList.push(pokemon);
-    },
-    getAll: function() {
-      return pokemonList;
-    }
-  };
-
-})();
