@@ -47,14 +47,5 @@ let pokemonList=[
   pokemonRepository.getAll().forEach (function(pokemon) {
     //create a variable inside the forEach's loop function block, then assign it the ul element you just added to your “index.html” file.
     let pokemonListElement = document.querySelector('.pokemon-list');
-    let name = pokemon.name;
-    let height = pokemon.height;
-    let output = name + " (height: " + height + ")";
-                       
-    // Check if the height is above a certain value
-    if (height > 5) {
-      output += " - Wow, that's big!";
-    }
-  
-    document.write(output + "<br>");
+   
   });
