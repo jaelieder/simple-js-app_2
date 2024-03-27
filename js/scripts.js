@@ -51,6 +51,6 @@ let pokemonList=[
     let button = document.createElement('button');
     button.innerText = pokemon.name;
     button.classList.add('pokemon-button');
-    listpokemon.appendChild(button);
-    pokemonListElement.appendChild(listpokemon);
+    listItem.appendChild(button);
+    pokemonListElement.appendChild(listItem);
   });
