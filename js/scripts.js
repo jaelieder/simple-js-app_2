@@ -53,11 +53,10 @@ let pokemonList=[
       return pokemonList;
     },
     addListItem: addListItem
-  },
-
+  };
 })();
 
   pokemonRepository.getAll().forEach (function(pokemon) {
     //create a variable inside the forEach's loop function block, then assign it the ul element you just added to your “index.html” file.
     pokemonRepository.addListItem(pokemon);
-  });
+});
