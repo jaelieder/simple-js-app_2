@@ -43,6 +43,10 @@ let pokemonList=[
     listItem.appendChild(button);
     pokemonListElement.appendChild(listItem);
   }
+
+  function showDetails(pokemon) {
+    console.log(pokemon);
+  }
   
   return {
     add: function(pokemon) {
