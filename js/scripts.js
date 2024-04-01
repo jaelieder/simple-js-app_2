@@ -84,7 +84,7 @@ function addListItem(pokemon){
     });
   }
   
-  return {
+  // return {
     // add: function(pokemon) {
     //   pokemonList.push(pokemon);
     //   addListItem(pokemon);
@@ -92,11 +92,19 @@ function addListItem(pokemon){
     // getAll: function() {
     //   return pokemonList;
     // },
-    addListItem: addListItem
+  return {
+      add: add,
+      getAll: getAll,
+      addListItem: addListItem,
+      loadList: loadList,
+      loadDetails: loadDetails
   };
+    
 })();
 
+pokemonRepository.loadList().then(function () {  
   pokemonRepository.getAll().forEach (function(pokemon) {
     //create a variable inside the forEach's loop function block, then assign it the ul element you just added to your “index.html” file.
-    pokemonRepository.addListItem(pokemon);
+      pokemonRepository.addListItem(pokemon);
+  });
 });
