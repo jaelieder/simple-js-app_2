@@ -1,38 +1,40 @@
 let pokemonRepository = (function() {
+  let pokemonList = [];
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
 //pokemon array
-let pokemonList=[
-    {
-    name: 'Squirtle',
-    id: 7,
-    height: 5,
-    type: ['water']
-    },
-    {
-    name: 'Spearow',
-    id: 21,
-    height: 3,
-    type: ['flying','normal']
-    },
-    {
-    name: 'Jigglypuff',
-    id: 39,
-    height: 5,
-    type: ['fairy','normal']
-    },
-    {
-    name: 'Psyduck',
-    id: 54,  
-    height: 8,
-    type: ["water"]
-    },
-    {
-    name: 'Pikachu',
-    id: 25,
-    height: 4,
-    type: ['electric']
-        }
-  ];
+// let pokemonList=[
+//     {
+//     name: 'Squirtle',
+//     id: 7,
+//     height: 5,
+//     type: ['water']
+//     },
+//     {
+//     name: 'Spearow',
+//     id: 21,
+//     height: 3,
+//     type: ['flying','normal']
+//     },
+//     {
+//     name: 'Jigglypuff',
+//     id: 39,
+//     height: 5,
+//     type: ['fairy','normal']
+//     },
+//     {
+//     name: 'Psyduck',
+//     id: 54,  
+//     height: 8,
+//     type: ["water"]
+//     },
+//     {
+//     name: 'Pikachu',
+//     id: 25,
+//     height: 4,
+//     type: ['electric']
+//         }
+//   ];
 
   function addListItem(pokemon){
     let pokemonListElement = document.querySelector('.pokemon-list');
