@@ -9,6 +9,10 @@ body {
   }
 
   #modal-container {
+    display: none;
+  }
+
+  #modal-container.is-visible {
     position: fixed;
     padding: 20px;
     box-sizing: border-box;
@@ -55,15 +59,6 @@ body {
   
   .modal p {
     margin-bottom: 0;
-  }
-
-  #modal-container {
-    display: none;
-  }
-  
-  #modal-container.is-visible {
-    /* CSS for modal container - add your own desired CSS styles here */
-    display: block;
   }
   
   .pokemon-button {
