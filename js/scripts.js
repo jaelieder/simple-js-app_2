@@ -93,8 +93,8 @@ let pokemonRepository = (function() {
 
     let imageElement = document.createElement("img");
     imageElement.setAttribute("src", img);
-    imageElement.style.width = "100%"; // Set width to 100%
-    imageElement.style.height = "auto"; // Maintain aspect ratio
+    imageElement.setAttribute("width", "300");
+    imageElement.setAttribute("height", "300");
     imageElement.setAttribute("alt", "Pokemon Image");
 
     modal.appendChild(closeButtonElement);
