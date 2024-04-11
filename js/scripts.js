@@ -127,9 +127,9 @@ let pokemonRepository = (function() {
     }
   });
 
-  document.querySelector('#show-modal').addEventListener('click', () => {
-    showModal('Modal title', 'This is the modal content!');
-  });
+  // document.querySelector('#show-modal').addEventListener('click', () => {
+  //   showModal('Modal title', 'This is the modal content!');
+  // });
 
   return {
       add: add,
