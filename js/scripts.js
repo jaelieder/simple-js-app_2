@@ -71,9 +71,9 @@ let pokemonRepository = (function() {
     });
   }
 
-  function showModal() {
+  function showModal(title, text, img) {
     let modalContainer = document.querySelector('modal-container');
-    modalContainer.classList.add(is-visible);
+    // modalContainer.classList.add(is-visible);
 
     modalContainer.innerHTML = '';
 
@@ -92,9 +92,16 @@ let pokemonRepository = (function() {
     let contentElement = document.createElement('p');
     contentElement.innerText = text;
 
+    let imageElement = document.createElement("img");
+    imageElement.setAttribute("src", img);
+    imageElement.setAttribute("width", "304");
+    imageElement.setAttribute("height", "228");
+    imageElement.setAttribute("alt", "The team logo");
+
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
     modal.appendChild(contentElement);
+    modal.appendChild(imageElement);
     modalContainer.appendChild(modal);
 
     modalContainer.classList.add('is-visible');
